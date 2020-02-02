@@ -3,7 +3,7 @@ plot_scatterhist <- function(x, xbreaks = 10, ybreaks = 10, ...) {
 
   par(mar = c(3, 3, 1, 1))
   plot(x, xlab = "", ylab = "", ...)
-
+  
   y <- hist(x[, 1], breaks = xbreaks, plot = FALSE)
   par(mar = c(0, 3, 2, 1))
   barplot(y$counts, col = 0, space = 0)
